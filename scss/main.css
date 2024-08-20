@@ -168,8 +168,6 @@ body {
 }
 
 .hero {
-  background-color: #f5f6fa;
-  padding: 4rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,21 +177,23 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: url("../../assets/images/background-top.png") no-repeat;
 }
 
 .hero__content {
-  max-width: 50%;
+  padding: 4rem 2rem;
 }
 
 .hero__content__title {
-  color: #1b2357;
-  font-size: 2rem;
-  line-height: 1.2;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
   margin-bottom: 1rem;
 }
 
 .hero__content__description {
-  color: #4a4a4a;
+  color: #8794BA;
   margin-bottom: 2rem;
 }
 
@@ -219,7 +219,7 @@ body {
 
 .features {
   padding: 4rem 2rem;
-  background-color: #fff;
+  background-color: #f5f6fa;
 }
 
 .features__title {
@@ -244,7 +244,6 @@ body {
 }
 
 .features__items__item {
-  background-color: #f5f6fa;
   padding: 2rem;
   border-radius: 8px;
   text-align: center;

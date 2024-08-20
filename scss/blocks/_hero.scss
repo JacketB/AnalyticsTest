@@ -1,22 +1,24 @@
 .hero {
-    background-color: $background-color;
-    padding: 4rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+    background: url("../../assets/images/background-top.png") no-repeat;
+
+
+
     &__content {
-      max-width: 50%;
+      padding: 4rem 2rem;
   
       &__title {
-        color: $secondary-color;
-        font-size: 2rem;
-        line-height: 1.2;
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
         margin-bottom: 1rem;
       }
   
       &__description {
-        color: $text-color;
+        color: $secondary-text-color;
         margin-bottom: 2rem;
       }
   
