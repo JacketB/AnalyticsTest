@@ -3,7 +3,7 @@
   
    &__container {
     max-width: 1440px;
-    margin: auto;
+    margin: auto; 
 
     &__title {
       text-align: center;
@@ -16,11 +16,46 @@
     &__description {
       text-align: center;
       color: $secondary-text-color;
+      font-size: 18px;
+      line-height: 25px;
     }
 
     &__plans {
-      &__plan {
+      display: flex;
+      justify-content: space-between;
+
+      &__active {
+        border: none;
+        border-radius: 30px;
+        background: white;
+
+        &__title {
+          font-size: 40px;
+          font-weight: 700;
+          text-align: center;
+          color: $secondary-color;
+        }
         
+        &__description {
+          color: $secondary-text-color;
+          text-align: center;
+        }
+      }
+
+      &__plan {
+        border-radius: 30px;
+        border: 2px solid $secondary-button-color;
+
+        &__title {
+          font-size: 40px;
+          font-weight: 700;
+          text-align: center;
+        }
+ 
+        &__description {
+          color: $secondary-text-color;
+          text-align: center;
+        }
       }
     }
   }
