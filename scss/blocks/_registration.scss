@@ -1,0 +1,47 @@
+.registration {
+    padding: 4rem 2rem;
+    background-color: $secondary-color;
+    color: white;
+  
+    &__container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+    &__title {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: white;
+    }
+  
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  
+      &__label {
+        font-weight: bold;
+      }
+  
+      &__input, &__select {
+        padding: 0.75rem;
+        border-radius: $border-radius;
+        border: 1px solid white;
+        background-color: $background-color;
+        color: $secondary-color;
+      }
+  
+      &__submit {
+        background-color: $primary-color;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: $border-radius;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+        @include responsive-font(16px, 18px);
+      }
+    }
+  }
+  

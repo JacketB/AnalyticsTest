@@ -1,0 +1,38 @@
+.hero {
+    background-color: $background-color;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    &__content {
+      max-width: 50%;
+  
+      &__title {
+        color: $secondary-color;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+  
+      &__description {
+        color: $text-color;
+        margin-bottom: 2rem;
+      }
+  
+      &__cta {
+        background-color: $primary-color;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: $border-radius;
+        text-decoration: none;
+        font-weight: bold;
+        @include responsive-font(16px, 18px);
+      }
+    }
+  
+    &__image img {
+      max-width: 100%;
+    }
+  }
+  

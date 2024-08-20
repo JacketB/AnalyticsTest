@@ -1,0 +1,41 @@
+.features {
+    padding: 4rem 2rem;
+    background-color: #fff;
+  
+    &__title {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: $secondary-color;
+      font-size: 2rem;
+    }
+  
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+  
+      &__item {
+        background-color: $background-color;
+        padding: 2rem;
+        border-radius: $border-radius;
+        text-align: center;
+  
+        &__icon {
+          max-width: 50px;
+          margin-bottom: 1.5rem;
+        }
+  
+        &__item-title {
+          color: $secondary-color;
+          margin-bottom: 1rem;
+          font-size: 1.25rem;
+        }
+  
+        &__item-description {
+          color: $text-color;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  

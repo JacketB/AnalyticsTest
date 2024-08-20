@@ -1,0 +1,59 @@
+.pricing {
+    padding: 4rem 2rem;
+    background-color: $background-color;
+  
+    &__title {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: $secondary-color;
+      font-size: 2rem;
+    }
+  
+    &__plans {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+  
+      &__plan {
+        background-color: white;
+        padding: 2rem;
+        border-radius: $border-radius;
+        text-align: center;
+        border: 1px solid #eaeaea;
+  
+        &--starter { }
+        &--standard {
+          border: 2px solid $primary-color;
+        }
+        &--premium { }
+  
+        &__plan-title {
+          color: $secondary-color;
+          margin-bottom: 1rem;
+          font-size: 1.5rem;
+        }
+  
+        &__plan-users {
+          margin-bottom: 1rem;
+          color: $text-color;
+        }
+  
+        &__plan-price {
+          color: $primary-color;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+  
+        &__plan-cta {
+          background-color: $primary-color;
+          color: white;
+          padding: 1rem 2rem;
+          border-radius: $border-radius;
+          text-decoration: none;
+          font-weight: bold;
+          @include responsive-font(16px, 18px);
+        }
+      }
+    }
+  }
+  

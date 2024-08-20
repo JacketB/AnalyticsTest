@@ -1,0 +1,49 @@
+.header {
+    background-color: $secondary-color;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+    &__container {
+      @include flex-center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+  
+    &__logo img {
+      height: 40px;
+    }
+  
+    &__nav {
+      &__menu {
+        display: flex;
+        list-style: none;
+  
+        &__item {
+          margin-left: 2rem;
+        }
+  
+        &__link {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          @include responsive-font(14px, 16px);
+  
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  
+    &__auth .header__sign-up {
+      background-color: $primary-color;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: $border-radius;
+      text-decoration: none;
+      font-weight: bold;
+      @include responsive-font(14px, 16px);
+    }
+  }
+  

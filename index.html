@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Dashboard</title>
+  <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img src="assets/icons/logo.svg" alt="Analytics">
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#" class="header__link">Products</a></li>
+          <li class="header__menu-item"><a href="#" class="header__link">Features</a></li>
+          <li class="header__menu-item"><a href="#" class="header__link">Registration</a></li>
+          <li class="header__menu-item"><a href="#" class="header__link">Pricing</a></li>
+        </ul>
+      </nav>
+      <div class="header__auth">
+        <a href="#" class="header__sign-up">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Monitor your business on real-time dashboard</h1>
+        <p class="hero__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. 
+        </p>
+        <a href="#" class="hero__cta">Try for free</a>
+      </div>
+      <div class="hero__image">
+        <img src="assets/images/dashboard.png" alt="Dashboard Preview">
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features__container">
+        <h2 class="features__title">Main Features</h2>
+        <div class="features__items">
+          <div class="features__item">
+            <img src="assets/icons/monitoring.svg" alt="Monitoring 24/7" class="features__icon">
+            <h3 class="features__item-title">Monitoring 24/7</h3>
+            <p class="features__item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat.
+            </p>
+          </div>
+          <div class="features__item">
+            <img src="assets/icons/widget.svg" alt="Widget System" class="features__icon">
+            <h3 class="features__item-title">Widget System</h3>
+            <p class="features__item-description">
+              Sapien in etiam vitae nibh nunc mattis imperdiet sed nulla.
+            </p>
+          </div>
+          <div class="features__item">
+            <img src="assets/icons/performance.svg" alt="Best Performance" class="features__icon">
+            <h3 class="features__item-title">Best Performance</h3>
+            <p class="features__item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration">
+      <div class="registration__container">
+        <h2 class="registration__title">Registration</h2>
+        <form action="#" method="POST" class="registration__form">
+          <label for="name" class="registration__label">Name *</label>
+          <input type="text" id="name" name="name" class="registration__input" placeholder="Full Name">
+
+          <label for="department" class="registration__label">Department *</label>
+          <select id="department" name="department" class="registration__select">
+            <option value="">Please Select</option>
+          </select>
+
+          <label for="email" class="registration__label">Email address *</label>
+          <input type="email" id="email" name="email" class="registration__input" placeholder="example@gmail.com">
+
+          <label for="phone" class="registration__label">Phone</label>
+          <input type="tel" id="phone" name="phone" class="registration__input" placeholder="Phone number">
+
+          <button type="submit" class="registration__submit">Sign Up</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="pricing__container">
+        <h2 class="pricing__title">Pricing Plans</h2>
+        <div class="pricing__plans">
+          <div class="pricing__plan pricing__plan--starter">
+            <h3 class="pricing__plan-title">Starter</h3>
+            <p class="pricing__plan-users">up to 3 users</p>
+            <p class="pricing__plan-price">$29 per month</p>
+            <a href="#" class="pricing__plan-cta">Order</a>
+          </div>
+          <div class="pricing__plan pricing__plan--standard">
+            <h3 class="pricing__plan-title">Standard</h3>
+            <p class="pricing__plan-users">up to 20 users</p>
+            <p class="pricing__plan-price">$99 per month</p>
+            <a href="#" class="pricing__plan-cta">Order</a>
+          </div>
+          <div class="pricing__plan pricing__plan--premium">
+            <h3 class="pricing__plan-title">Premium</h3>
+            <p class="pricing__plan-users">up to 200 users</p>
+            <p class="pricing__plan-price">$299 per month</p>
+            <a href="#" class="pricing__plan-cta">Order</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <img src="assets/icons/logo.svg" alt="Analytics">
+      </div>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#" class="footer__social-link"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+        <a href="#" class="footer__social-link"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dist/js/main.js"></script>
+</body>
+</html>
