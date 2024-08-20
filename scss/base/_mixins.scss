@@ -30,15 +30,15 @@
   }
 }
 
-@mixin responsive-background() {
-  background: url("../../assets/images/background-top.png") no-repeat;
+@mixin responsive-background($bgUrlPng, $bgUrlSvg) {
+  background: url($bgUrlPng) no-repeat;
   background-size: 100%;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
 
   @media screen and (max-width: 1024px) {
-    background: url("../../assets/images/background-top.svg") no-repeat;
+    background: url($bgUrlSvg) no-repeat;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;

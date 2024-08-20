@@ -1,13 +1,16 @@
 .footer {
-    background-color: $secondary-color;
+  @include responsive-background("/assets/images/background-bottom.png","/assets/images/background-bottom.svg");
     padding: 2rem 0;
     color: white;
   
     &__container {
+      border-top: 2px solid #eeeef62d;
+      max-width: 1440px;
+      margin: auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 2rem;
+      padding: 30px;
     }
   
     &__logo img {
