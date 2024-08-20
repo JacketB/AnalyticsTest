@@ -1,6 +1,98 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+button,
+input,
+textarea {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+ul > li:first-child,
+ol > li:first-child {
+  margin-top: 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #eaeaea;
+}
+
+body {
+  min-height: 100vh;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 .header {
@@ -43,7 +135,7 @@
 }
 
 .header__nav__menu__link {
-  color: white;
+  color: #8794BA;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
@@ -135,6 +227,10 @@
   margin-bottom: 3rem;
   color: #1b2357;
   font-size: 2rem;
+}
+
+.features__text {
+  text-align: center;
 }
 
 .features__items {
@@ -327,5 +423,11 @@
 
 .footer__social__social-link img {
   height: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #4a4a4a;
+  background-color: #f5f6fa;
 }
 /*# sourceMappingURL=main.css.map */

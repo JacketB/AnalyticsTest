@@ -8,6 +8,10 @@
       color: $secondary-color;
       font-size: 2rem;
     }
+
+    &__text {
+        text-align: center;
+    }
   
     &__items {
       display: flex;

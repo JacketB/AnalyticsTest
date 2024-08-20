@@ -24,7 +24,7 @@
         }
   
         &__link {
-          color: white;
+          color: $secondary-text-color;
           text-decoration: none;
           font-weight: bold;
           @include responsive-font(14px, 16px);
