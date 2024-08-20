@@ -7,7 +7,9 @@
     &__container {
       @include flex-center;
       justify-content: space-between;
+      margin: auto;
       padding: 1rem 2rem;
+      max-width: 1400px;
     }
   
     &__logo img {
@@ -16,7 +18,7 @@
   
     &__nav {
       &__menu {
-        display: flex;
+        @include responsive-display(none, flex);
         list-style: none;
   
         &__item {
@@ -30,20 +32,29 @@
           @include responsive-font(14px, 16px);
   
           &:hover {
-            color: $primary-color;
+            color: white;
           }
         }
       }
     }
   
     &__auth .header__sign-up {
-      background-color: $primary-color;
-      color: white;
-      padding: 0.5rem 1.5rem;
-      border-radius: $border-radius;
+      @include responsive-display(none, inline);
+      border: 2px solid $secondary-button-color;
+      color: $secondary-button-color;
+      width: 200px;
+      font-weight: 400;
+      padding: 14px 80px;
+      border-radius: $button-border-radius;
       text-decoration: none;
-      font-weight: bold;
       @include responsive-font(14px, 16px);
+      transition: 0.2s;
+    }
+
+    &__auth .header__sign-up:hover {
+      background: $secondary-button-color;
+      color: white;
+      transition: 0.2s;
     }
   }
   

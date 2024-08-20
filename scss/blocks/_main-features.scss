@@ -1,27 +1,35 @@
 .features {
     padding: 4rem 2rem;
     background-color: $background-color;
+    max-width: 1400px;
+    margin: auto;
   
     &__title {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       color: $secondary-color;
-      font-size: 2rem;
+      font-size: 40px;
+      font-weight: 700;
     }
 
     &__text {
-        text-align: center;
+      display: block;
+      text-align: center;
     }
   
     &__items {
       display: flex;
       justify-content: space-between;
       gap: 2rem;
+      flex-wrap: wrap;
   
       &__item {
         padding: 2rem;
         border-radius: $border-radius;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 380px;
   
         &__icon {
           max-width: 50px;
@@ -37,6 +45,7 @@
         &__item-description {
           color: $text-color;
           font-size: 1rem;
+          text-align: center;
         }
       }
     }

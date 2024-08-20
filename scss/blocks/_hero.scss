@@ -3,17 +3,21 @@
     align-items: center;
     justify-content: space-between;
     background: url("../../assets/images/background-top.png") no-repeat;
-
-
+    background-size: 100%;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
 
     &__content {
       padding: 4rem 2rem;
+      max-width: 600px;
+      margin: 12% auto;
   
       &__title {
         color: white;
         font-size: 50px;
         font-weight: 700;
-        line-height: 60px;
+        line-height: 1.2;
         margin-bottom: 1rem;
       }
   
@@ -25,16 +29,24 @@
       &__cta {
         background-color: $primary-color;
         color: white;
-        padding: 1rem 2rem;
-        border-radius: $border-radius;
+        width: 200px;
+        font-weight: 400;
+        padding: 14px 80px;
+        border-radius: $button-border-radius;
         text-decoration: none;
-        font-weight: bold;
-        @include responsive-font(16px, 18px);
+        @include responsive-font(14px, 16px);
+        transition: 0.2s;
+      }
+
+      &__cta:hover {
+        background: $primary-button-hover;
+        transition: 0.2s;
       }
     }
   
     &__image img {
-      max-width: 100%;
+      @include responsive-display(none, block);
+      max-width: 873px;
     }
   }
   
