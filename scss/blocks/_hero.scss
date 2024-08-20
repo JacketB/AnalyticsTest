@@ -1,21 +1,16 @@
 .hero {
-    display: flex;
+    @include responsive-display(block, flex, 1024px);
     align-items: center;
     justify-content: space-between;
-    background: url("../../assets/images/background-top.png") no-repeat;
-    background-size: 100%;
-    -moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
+    @include responsive-background();
 
     &__content {
-      padding: 4rem 2rem;
+      @include responsive-content-absent();
       max-width: 600px;
-      margin: 12% auto;
   
       &__title {
         color: white;
-        font-size: 50px;
+        @include responsive-font(30px, 50px);
         font-weight: 700;
         line-height: 1.2;
         margin-bottom: 1rem;
@@ -29,7 +24,7 @@
       &__cta {
         background-color: $primary-color;
         color: white;
-        width: 200px;
+        @include responsive-button();
         font-weight: 400;
         padding: 14px 80px;
         border-radius: $button-border-radius;
@@ -45,8 +40,16 @@
     }
   
     &__image img {
-      @include responsive-display(none, block);
+      @include responsive-display(none, block, 1024px);
       max-width: 873px;
+    }
+
+    &__mobile {
+      &__charts img {
+        margin: auto;
+
+        @include responsive-display(block, none, 1024px);
+      }
     }
   }
   

@@ -3,25 +3,25 @@
     background-color: $background-color;
     max-width: 1400px;
     margin: auto;
+    @include responsive-text-align();
   
     &__title {
-      text-align: center;
       margin-bottom: 2rem;
       color: $secondary-color;
-      font-size: 40px;
+      @include responsive-font(30px, 40px);
       font-weight: 700;
     }
 
     &__text {
       display: block;
-      text-align: center;
     }
   
     &__items {
-      display: flex;
-      justify-content: space-between;
+      @include responsive-display(none, flex, 768px);
+      justify-content: center;
       gap: 2rem;
       flex-wrap: wrap;
+      color: $secondary-text-color;
   
       &__item {
         padding: 2rem;
@@ -40,12 +40,46 @@
           color: $secondary-color;
           margin-bottom: 1rem;
           font-size: 1.25rem;
+          font-weight: 700;
         }
   
         &__item-description {
           color: $text-color;
           font-size: 1rem;
           text-align: center;
+        }
+      }
+    }
+
+    &__mobile-items {
+      @include responsive-display(flex, none, 768px);
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5%;
+      
+      &__item {
+        display: flex;
+        text-align: left;
+        margin: 5% auto;
+        max-width: 50%;
+
+        &__title {
+          color: $secondary-color;
+          margin-bottom: 1rem;
+          font-size: 1.25rem;
+          text-align: left;
+          font-weight: 700;
+        }
+
+        &__description {
+          color: $secondary-text-color;
+          font-size: 1rem;
+          text-align: left;
+        }
+
+        &__icon {
+          margin-right: 10%;
+          width: 60px;
         }
       }
     }

@@ -24,11 +24,43 @@
       <div class="header__auth">
         <a href="#" class="header__sign-up">Sign Up</a>
       </div>
+
+      <div class="header__burger" id="burger_open" onclick="menuWorker()">
+        <img src="assets/icons/burger.svg" alt="Burger" id="burger_button">
+      </div>
     </div>
   </header>
 
+  <section class="burger_menu" id="burger_menu">
+    <div class="burger_menu__content">
+      <div class="burger_menu__content__links">
+        <div class="burger_menu__content__links__link">
+          <a href="#">Products</a>
+        </div>
+        
+        <div class="burger_menu__content__links__link">
+          <a href="#">Features</a>
+        </div>
+        
+        <div class="burger_menu__content__links__link">
+          <a href="#">Registration</a>
+        </div>
+        
+        <div class="burger_menu__content__links__link">
+          <a href="#">Pricing</a>
+        </div>  
+      </div>
+
+      <a href="#" class="burger_menu__content__sing-up">Sign Up</a>
+    
+    </div>  
+  </section>
+
   <main class="main-content">
     <section class="hero">
+      <div class="hero__mobile__charts">
+        <img src="assets/images/group-charts.svg" alt="Dashboard preview">
+      </div>
       <div class="hero__content">
         <h1 class="hero__content__title">Monitor your business on real-time dashboard</h1>
         <p class="hero__content__description">
@@ -45,7 +77,7 @@
       <div class="features__container">
         <h2 class="features__title">Main Features</h2>
         <span class="features__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.
         </span>
         <div class="features__items">
           <div class="features__items__item">
@@ -70,10 +102,40 @@
             </p>
           </div>
         </div>
+
+        <div class="features__mobile-items">
+          <div class="features__mobile-items__item">
+            <img src="assets/icons/clock.svg" alt="Widget System" class="features__mobile-items__item__icon">
+            <div>
+              <h3 class="features__mobile-items__item__title">Monitoring 24/7</h3>
+              <p class="features__mobile-items__item__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat.
+              </p>
+            </div>
+          </div>
+          <div class="features__mobile-items__item">
+            <img src="assets/icons/PC.svg" alt="Widget System" class="features__mobile-items__item__icon">
+            <div>
+              <h3 class="features__mobile-items__item__title">Widget System</h3>
+              <p class="features__mobile-items__item__description">
+                Sapien in etiam vitae nibh nunc mattis imperdiet sed nulla.
+              </p>
+            </div>
+          </div>
+          <div class="features__mobile-items__item">
+            <img src="assets/icons/Rocket.svg" alt="Best Performance" class="features__mobile-items__item__icon">
+            <div>
+              <h3 class="features__mobile-items__item__title">Best Performance</h3>
+              <p class="features__mobile-items__item__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="registration">
+    <!-- <section class="registration">
       <div class="registration__container">
         <h2 class="registration__title">Registration</h2>
         <form action="#" method="POST" class="registration__form">
@@ -94,9 +156,9 @@
           <button type="submit" class="registration__submit">Sign Up</button>
         </form>
       </div>
-    </section>
+    </section> -->
 
-    <section class="pricing">
+    <!-- <section class="pricing">
       <div class="pricing__container">
         <h2 class="pricing__title">Pricing Plans</h2>
         <div class="pricing__plans">
@@ -120,10 +182,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__container">
       <div class="footer__logo">
         <img src="assets/icons/Style=footer.svg" alt="Analytics">
@@ -134,6 +196,8 @@
         <a href="#" class="footer__social-link"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
       </div>
     </div>
-  </footer>
+  </footer> -->
+
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@
   
     &__nav {
       &__menu {
-        @include responsive-display(none, flex);
+        @include responsive-display(none, flex, 768px);
         list-style: none;
   
         &__item {
@@ -39,7 +39,8 @@
     }
   
     &__auth .header__sign-up {
-      @include responsive-display(none, inline);
+      @include responsive-display(none, inline, 768px);
+      white-space: nowrap;
       border: 2px solid $secondary-button-color;
       color: $secondary-button-color;
       width: 200px;
@@ -55,6 +56,10 @@
       background: $secondary-button-color;
       color: white;
       transition: 0.2s;
+    }
+
+    &__burger {
+      @include responsive-display(block, none, 768px);
     }
   }
   

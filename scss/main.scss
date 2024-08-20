@@ -6,7 +6,8 @@
 @import 'blocks/_main-features';
 @import 'blocks/_registration';
 @import 'blocks/_pricing-plans';
-@import 'blocks/footer';
+@import 'blocks/_footer';
+@import 'blocks/_burger_menu';
 
 body {
     font-family: $font-stack;

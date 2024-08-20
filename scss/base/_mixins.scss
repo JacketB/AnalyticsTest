@@ -12,11 +12,54 @@
   }
 }
 
-@mixin responsive-display($none, $display) {
+@mixin responsive-display($none, $display, $max-width) {
   display: $display;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $max-width) {
     display: $none;
   }
 }
+
+@mixin responsive-button() {
+  width: 200px;
   
+  @media screen and (max-width: 1024px) {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@mixin responsive-background() {
+  background: url("../../assets/images/background-top.png") no-repeat;
+  background-size: 100%;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+
+  @media screen and (max-width: 1024px) {
+    background: url("../../assets/images/background-top.svg") no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+  }
+}
+
+@mixin responsive-content-absent() {
+  padding: 4rem 2rem;
+  margin: 12% auto;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 2rem 10rem 2rem;
+    margin: 0 auto 12% auto;
+  }
+}
+
+@mixin responsive-text-align() {
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
+}
