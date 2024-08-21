@@ -9,7 +9,7 @@
   &__container {
     max-width: 1440px;
     margin: auto;
-    text-align: center;
+    @include responsive-text-align();
 
     &__title {
       margin: 10% 0 0;
@@ -36,13 +36,14 @@
 .plan {
   border-radius: 30px;
   padding: 2% 4%;
-  margin: 0 5%;
+  margin: 0 2%;
   text-align: center;
   @include responsive-width(240px, 338px);
 
   &__title {
     @include responsive-font(28px, 40px);
     font-weight: 700;
+    margin-top: 5%;
   }
 
   &__description {

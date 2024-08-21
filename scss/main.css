@@ -564,6 +564,12 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .pricing__container {
+    text-align: left;
+  }
+}
+
 .pricing__container__title {
   margin: 10% 0 0;
   color: white;
@@ -591,7 +597,7 @@ body {
 .plan {
   border-radius: 30px;
   padding: 2% 4%;
-  margin: 0 5%;
+  margin: 0 2%;
   text-align: center;
   min-width: 240px;
 }
@@ -605,6 +611,7 @@ body {
 .plan__title {
   font-size: 28px;
   font-weight: 700;
+  margin-top: 5%;
 }
 
 @media screen and (min-width: 768px) {
