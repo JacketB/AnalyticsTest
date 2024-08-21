@@ -1,5 +1,5 @@
 .footer {
-  @include responsive-background("./AnalyticsTest/assets/images/background-bottom.png","./AnalyticsTest/assets/images/background-bottom.svg");
+  @include responsive-background("/AnalyticsTest/assets/images/background-bottom.png","/AnalyticsTest/assets/images/background-bottom.svg");
     padding: 2rem 0;
     color: white;
   
