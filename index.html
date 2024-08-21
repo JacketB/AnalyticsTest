@@ -22,7 +22,7 @@
         </ul>
       </nav>
       <div class="header__auth">
-        <a href="#" class="header__sign-up">Sign Up</a>
+        <button class="header__sign-up">Sign Up</button>
       </div>
 
       <div class="header__burger" id="burger_open" onclick="menuWorker()">
@@ -51,7 +51,7 @@
         </div>  
       </div>
 
-      <a href="#" class="burger_menu__content__sing-up">Sign Up</a>
+      <button class="burger_menu__content__sing-up">Sign Up</button>
     
     </div>  
   </section>
@@ -66,7 +66,7 @@
         <p class="hero__content__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.  
         </p>
-        <a href="#" class="hero__content__cta">Try for free</a>
+        <button class="hero__content__cta">Try for free</button>
       </div>
       <div class="hero__image">
         <img src="assets/images/main-screen.svg" alt="Dashboard Preview">
@@ -179,22 +179,35 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est.
         </p>
 
-        <div class="pricing__container__plans">
-            <div class="pricing__container__plans__plan">
-              <h2 class="pricing__container__plans__plan__title">Starter</h2>
-              <div class="pricing__container__plans__plan__description">up to 3 users</div>
-            </div>
-            
-            <div class="pricing__container__plans__active">
-              <h2 class="pricing__container__plans__active__title">Standart</h2>
-              <div class="pricing__container__plans__active__description">up to 20 users</div>
-            </div>
-            
-            <div class="pricing__container__plans__plan">
-              <h2 class="pricing__container__plans__plan__title">Premium</h2>
-              <div class="pricing__container__plans__plan__description">up to 200 users</div>
-            </div>
+        <div class="pricing__container__plans" id="plans">
+          <div class="plan plan__default">
+            <h2 class="plan__title">Starter</h2>
+            <p class="plan__description">up to 3 users</p>
+            <hr>
+            <div class="plan__price">$29</div>
+            <p class="plan__description">per month</p>
+            <button class="plan__order plan__default__order">order</button>
+          </div>
+        
+          <div class="plan plan__active">
+            <h2 class="plan__title plan__active__title">Standard</h2>
+            <p class="plan__description">up to 20 users</p>
+            <hr>
+            <div class="plan__price plan__active__price">$99</div>
+            <p class="plan__description">per month</p>
+            <button class="plan__order  plan__active__order">order</button>
+          </div>
+        
+          <div class="plan plan__default">
+            <h2 class="plan__title">Premium</h2>
+            <p class="plan__description">up to 200 users</p>
+            <hr>
+            <div class="plan__price">$299</div>
+            <p class="plan__description">per month</p>
+            <button class="plan__order  plan__default__order">order</button>
+          </div>
         </div>
+        
       </div>
     </section>
 

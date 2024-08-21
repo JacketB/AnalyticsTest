@@ -47,11 +47,11 @@
 }
 
 @mixin responsive-content-absent() {
-  padding: 4rem 2rem;
+  padding: 64px 32px;
   margin: 12% auto;
 
   @media screen and (max-width: 1024px) {
-    padding: 0 2rem 10rem 2rem;
+    padding: 0 32px 160px 32px;
     margin: 0 auto 12% auto;
   }
 }
@@ -61,5 +61,13 @@
 
   @media screen and (max-width: 768px) {
     text-align: left;
+  }
+}
+
+@mixin responsive-width($min-size, $max-size) {
+  min-width: $min-size;
+
+  @media screen and (min-width: 768px) {
+    min-width: $max-size;
   }
 }

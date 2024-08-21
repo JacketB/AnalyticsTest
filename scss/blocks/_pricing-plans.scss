@@ -1,20 +1,24 @@
 .pricing {
   padding: 4rem 2rem;
-  
-   &__container {
+
+  hr {
+    margin: 20% 0;
+    border: 1px solid #EEEEF6;
+  }
+
+  &__container {
     max-width: 1440px;
-    margin: auto; 
+    margin: auto;
+    text-align: center;
 
     &__title {
-      text-align: center;
-      margin-bottom: 20px;
+      margin: 10% 0 0;
       color: white;
       font-weight: 700;
       font-size: 40px;
     }
   
     &__description {
-      text-align: center;
       color: $secondary-text-color;
       font-size: 18px;
       line-height: 25px;
@@ -23,41 +27,78 @@
     &__plans {
       display: flex;
       justify-content: space-between;
-
-      &__active {
-        border: none;
-        border-radius: 30px;
-        background: white;
-
-        &__title {
-          font-size: 40px;
-          font-weight: 700;
-          text-align: center;
-          color: $secondary-color;
-        }
-        
-        &__description {
-          color: $secondary-text-color;
-          text-align: center;
-        }
-      }
-
-      &__plan {
-        border-radius: 30px;
-        border: 2px solid $secondary-button-color;
-
-        &__title {
-          font-size: 40px;
-          font-weight: 700;
-          text-align: center;
-        }
- 
-        &__description {
-          color: $secondary-text-color;
-          text-align: center;
-        }
-      }
+      overflow-x: auto;
+      margin-top: 10%;
     }
   }
 }
-  
+
+.plan {
+  border-radius: 30px;
+  padding: 2% 4%;
+  text-align: center;
+  @include responsive-width(240px, 338px);
+
+  &__title {
+    @include responsive-font(28px, 40px);
+    font-weight: 700;
+  }
+
+  &__description {
+    @include responsive-font(16px, 18px);
+    color: $secondary-text-color;
+  }
+
+  &__price {
+    @include responsive-font(30px, 50px);
+    font-weight: 700;
+  }
+
+  &__order {
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    padding: 14px 80px;
+    border-radius: 68px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s;
+    margin: 20% 0 10% 0;
+  }
+
+  &__order:hover {
+    color: white;
+    transition: 0.2s;
+  }
+
+  &__default {
+    border: 2px solid $secondary-button-color;
+
+    &__order {
+      border: 2px solid #465B95;
+      color: #465B95;
+    }
+
+    &__order:hover {
+      background: #465B95;
+    }
+  }
+
+  &__active {
+    border: none;
+    background: white;
+
+    &__title, &__price {
+      color: $secondary-color;
+    }
+
+    &__order {
+      background-color: $primary-color;
+    }
+
+    &__order:hover {
+      background: $primary-button-hover;
+    }
+  }
+}
