@@ -6,6 +6,7 @@
   <title>Analytics Dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="scss/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
   <header class="header">
@@ -179,7 +180,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est.
         </p>
 
-        <div class="pricing__container__plans" id="plans">
+        <!-- <div class="pricing__container__plans" id="plans">
           <div class="plan plan__default">
             <h2 class="plan__title">Starter</h2>
             <p class="plan__description">up to 3 users</p>
@@ -206,8 +207,36 @@
             <p class="plan__description">per month</p>
             <button class="plan__order  plan__default__order">order</button>
           </div>
-        </div>
+        </div> -->
+
+        <div class="owl-carousel">
+          <div class="plan plan__default">
+            <h2 class="plan__title">Starter</h2>
+            <p class="plan__description">up to 3 users</p>
+            <hr>
+            <div class="plan__price">$29</div>
+            <p class="plan__description">per month</p>
+            <button class="plan__order plan__default__order">order</button>
+          </div>
         
+          <div class="plan plan__active">
+            <h2 class="plan__title plan__active__title">Standard</h2>
+            <p class="plan__description">up to 20 users</p>
+            <hr>
+            <div class="plan__price plan__active__price">$99</div>
+            <p class="plan__description">per month</p>
+            <button class="plan__order  plan__active__order">order</button>
+          </div>
+
+          <div class="plan plan__default">
+            <h2 class="plan__title">Premium</h2>
+            <p class="plan__description">up to 200 users</p>
+            <hr>
+            <div class="plan__price">$299</div>
+            <p class="plan__description">per month</p>
+            <button class="plan__order  plan__default__order">order</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -223,7 +252,8 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

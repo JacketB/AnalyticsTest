@@ -1,6 +1,3 @@
-var overflowContainer = document.getElementById('plans');
-overflowContainer.scrollTo((overflowContainer.offsetWidth * 0.96),0);
-
 function menuWorker() {
     let element = document.getElementById("burger_menu");
     let buttonImage = document.getElementById("burger_button");
@@ -15,3 +12,27 @@ function menuWorker() {
         buttonImage.src = "assets/icons/burger.svg";
     }
 }
+
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop: false,                 // Бесконечный цикл
+      margin: 10,                 // Отступы между слайдами
+      center: true,               // Центрирование активного слайда
+      responsiveClass: true,
+      startPosition: 1,
+      responsive: {
+        0: {
+          items: 1,               // Показывать 1 слайд на маленьких экранах
+          center: true,
+        },
+        768: {
+          items: 3,               // Показывать 2 слайда на средних экранах
+          center: false,    // Убираем центрирование
+        },
+        1024: {
+          items: 3,               // Показывать 3 слайда на больших экранах
+          center: false,
+        }
+      }
+    });
+  });

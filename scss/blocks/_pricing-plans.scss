@@ -25,9 +25,8 @@
     }
 
     &__plans {
-      display: flex;
+      @include responsive-display(none, flex, 1024px);
       justify-content: space-between;
-      overflow-x: auto;
       margin-top: 10%;
     }
   }
