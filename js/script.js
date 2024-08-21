@@ -1,5 +1,5 @@
 var overflowContainer = document.getElementById('plans');
-overflowContainer.scrollTo((overflowContainer.offsetWidth * 0.95),0);
+overflowContainer.scrollTo((overflowContainer.offsetWidth * 1.05),0);
 
 function menuWorker() {
     let element = document.getElementById("burger_menu");
