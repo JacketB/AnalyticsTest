@@ -2,7 +2,7 @@
     @include responsive-display(block, flex, 1024px);
     align-items: center;
     justify-content: space-between;
-    @include responsive-background("../../assets/images/background-top.png","../../assets/images/background-top.svg");
+    @include responsive-background("./assets/images/background-top.png","./assets/images/background-top.svg");
 
     &__content {
       @include responsive-content-absent();

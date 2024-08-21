@@ -213,7 +213,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("../../assets/images/background-top.png") no-repeat;
+  background: url("./assets/images/background-top.png") no-repeat;
   background-size: 100%;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
@@ -228,7 +228,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .hero {
-    background: url("../../assets/images/background-top.svg") no-repeat;
+    background: url("./assets/images/background-top.svg") no-repeat;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -685,7 +685,7 @@ body {
 }
 
 .footer {
-  background: url("../../assets/images/background-bottom.png") no-repeat;
+  background: url("./assets/images/background-bottom.png") no-repeat;
   background-size: 100%;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
@@ -696,7 +696,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .footer {
-    background: url("../../assets/images/background-bottom.svg") no-repeat;
+    background: url("./assets/images/background-bottom.svg") no-repeat;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
