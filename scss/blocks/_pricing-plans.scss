@@ -1,5 +1,5 @@
 .pricing {
-  padding: 4rem 2rem;
+  padding: 86px 32px 2% 32px;
 
   hr {
     margin: 20% 0;
@@ -12,21 +12,22 @@
     @include responsive-text-align();
 
     &__title {
-      margin: 10% 0 0;
+      margin: 15% 0 0 0;
       color: white;
       font-weight: 700;
-      font-size: 40px;
+      @include responsive-font(28px, 40px);
     }
   
     &__description {
       color: $secondary-text-color;
-      font-size: 18px;
+      @include responsive-font(16px, 18px);
       line-height: 25px;
     }
 
     &__plans {
-      @include responsive-display(none, flex, 1024px);
+      @include responsive-display(none, flex, 425px);
       justify-content: space-between;
+      overflow-x: auto;
       margin-top: 10%;
     }
   }
@@ -40,7 +41,7 @@
   @include responsive-width(240px, 338px);
 
   &__title {
-    @include responsive-font(28px, 40px);
+    @include responsive-font(32px, 40px);
     font-weight: 700;
     margin-top: 5%;
   }
@@ -51,7 +52,7 @@
   }
 
   &__price {
-    @include responsive-font(30px, 50px);
+    @include responsive-font(40px, 50px);
     font-weight: 700;
   }
 
@@ -60,7 +61,7 @@
     text-align: center;
     width: 100%;
     font-weight: 400;
-    padding: 14px 80px;
+    padding: 14px 0;
     border-radius: 68px;
     text-decoration: none;
     font-size: 16px;
@@ -102,4 +103,9 @@
       background: $primary-button-hover;
     }
   }
+}
+
+.owl-carousel {
+  @include responsive-display(block, none, 600px);
+  margin-top: 20px;
 }

@@ -13,10 +13,10 @@
 }
 
 @mixin responsive-display($none, $display, $max-width) {
-  display: $display;
+  display: $display !important;
 
   @media screen and (max-width: $max-width) {
-    display: $none;
+    display: $none !important;
   }
 }
 
@@ -67,7 +67,7 @@
 @mixin responsive-width($min-size, $max-size) {
   min-width: $min-size;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     min-width: $max-size;
   }
 }
