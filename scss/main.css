@@ -864,6 +864,15 @@ body {
   transition: 0.2s;
 }
 
+#burger_menu {
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+
+#burger_menu.open {
+  top: 0;
+}
+
 .custom-select {
   position: relative;
   background-color: #EEEEF6;

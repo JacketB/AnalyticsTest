@@ -10,11 +10,29 @@ checkScreenSizeAndScroll();
 
 window.addEventListener('resize', checkScreenSizeAndScroll);
 
-function menuWorker() {
+function toggleMenu() {
   let element = document.getElementById("burger_menu");
   let buttonImage = document.getElementById("burger_button");
+  
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (element.style.top == "-100%") {
+  let isOpen = element.classList.contains("open");
+
+  if (isOpen) {
+    element.classList.remove("open");
+    element.style.top = "-100%";
+    element.style.position = "absolute";
+    buttonImage.src = "assets/icons/burger.svg";
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+
+      document.body.style.top = `-${scrollTop}px`;
+    }
+  } else {
+    element.classList.add("open");
     element.style.top = "0";
     element.style.position = "sticky";
     buttonImage.src = "assets/icons/close.svg";
@@ -24,19 +42,8 @@ function menuWorker() {
       document.body.style.width = '100%';
       document.body.style.overflow = 'hidden';
     }
-  } else {
-    element.style.top = "-100%";
-    element.style.position = "absolute";
-    buttonImage.src = "assets/icons/burger.svg";
-
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      document.body.style.position = '';
-      document.body.style.width = '';
-      document.body.style.overflow = '';
-    }
   }
 }
-
 
 
 $(document).ready(function(){
