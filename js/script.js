@@ -13,17 +13,31 @@ window.addEventListener('resize', checkScreenSizeAndScroll);
 function menuWorker() {
   let element = document.getElementById("burger_menu");
   let buttonImage = document.getElementById("burger_button");
-  
+
   if (element.style.top == "-100%") {
-      element.style.top = "0";
-      element.style.position = "sticky";
-      buttonImage.src = "assets/icons/close.svg";
+    element.style.top = "0";
+    element.style.position = "sticky";
+    buttonImage.src = "assets/icons/close.svg";
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+      document.body.style.overflow = 'hidden';
+    }
   } else {
-      element.style.top = "-100%";
-      element.style.position = "absolute";
-      buttonImage.src = "assets/icons/burger.svg";
+    element.style.top = "-100%";
+    element.style.position = "absolute";
+    buttonImage.src = "assets/icons/burger.svg";
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+    }
   }
 }
+
+
 
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
