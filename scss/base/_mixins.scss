@@ -71,3 +71,12 @@
     min-width: $max-size;
   }
 }
+
+@mixin responsive-height() {
+  height: 100%;  
+
+  @media screen and (min-width: 1200px) {
+
+    height: 102vh;
+  }
+}

@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: space-between;
     @include responsive-background("../assets/images/background-top.png","../assets/images/background-top.svg");
-
+    @include responsive-height();
+    
     &__content {
       @include responsive-content-absent();
       max-width: 600px;
@@ -21,7 +22,7 @@
         margin-bottom: 2rem;
       }
   
-      &__cta {
+      &__button {
         background-color: $primary-color;
         color: white;
         @include responsive-button();
@@ -33,9 +34,13 @@
         transition: 0.2s;
       }
 
-      &__cta:hover {
+      &__button:hover {
         background: $primary-button-hover;
         transition: 0.2s;
+      }
+
+      &__button:focus {
+        background: $primary-button-pressed;
       }
     }
   

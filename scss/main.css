@@ -193,6 +193,11 @@ body {
   transition: 0.2s;
 }
 
+.header__auth .header__sign-up:focus {
+  background: #364672;
+  color: white;
+}
+
 .header__burger {
   display: none !important;
 }
@@ -218,6 +223,7 @@ body {
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -233,6 +239,12 @@ body {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 102vh;
   }
 }
 
@@ -268,7 +280,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.hero__content__cta {
+.hero__content__button {
   background-color: #ff007a;
   color: white;
   width: 200px;
@@ -282,7 +294,7 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .hero__content__cta {
+  .hero__content__button {
     display: block;
     text-align: center;
     width: 100%;
@@ -290,15 +302,19 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .hero__content__cta {
+  .hero__content__button {
     font-size: 16px;
   }
 }
 
-.hero__content__cta:hover {
+.hero__content__button:hover {
   background: #D61069;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.hero__content__button:focus {
+  background: #A60C51;
 }
 
 .hero__image img {
@@ -549,6 +565,16 @@ body {
   }
 }
 
+.registration__submit:hover {
+  background: #D61069;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.registration__submit:focus {
+  background: #A60C51;
+}
+
 .pricing {
   padding: 86px 32px 2% 32px;
 }
@@ -606,7 +632,7 @@ body {
   margin-top: 10%;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .pricing__container__plans {
     display: none !important;
   }
@@ -682,6 +708,7 @@ body {
 
 .plan__default {
   border: 2px solid #465B95;
+  background: #172755;
 }
 
 .plan__default__order {
@@ -691,6 +718,11 @@ body {
 
 .plan__default__order:hover {
   background: #465B95;
+}
+
+.plan__default__order:focus {
+  background: #364672;
+  color: white;
 }
 
 .plan__active {
@@ -708,6 +740,10 @@ body {
 
 .plan__active__order:hover {
   background: #D61069;
+}
+
+.plan__active__order:focus {
+  background: #A60C51;
 }
 
 .owl-carousel {
@@ -864,6 +900,13 @@ body {
   transition: 0.2s;
 }
 
+.burger_menu__content__sing-up:focus {
+  background: #364672;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 #burger_menu {
   -webkit-transition: top 0.3s ease;
   transition: top 0.3s ease;
@@ -898,7 +941,7 @@ body {
 .custom-select .select-selected:after {
   content: "\02C5";
   padding-left: 10px;
-  color: #aaa;
+  color: #4a4a4a;
 }
 
 .custom-select .select-selected.select-active {
@@ -908,7 +951,7 @@ body {
 
 .custom-select .select-items {
   position: absolute;
-  background-color: #fff;
+  background-color: white;
   border: 2px solid #EEEEF6;
   border-radius: 5px;
   top: 100%;
@@ -926,7 +969,7 @@ body {
 }
 
 .custom-select .select-items div:hover {
-  background-color: #f1f1f1;
+  background-color: #EEEEF6;
 }
 
 .custom-select .select-hide {
@@ -939,6 +982,16 @@ body {
 
 .custom-select .select-arrow-active:after {
   content: "\02C4";
+}
+
+.custom-select .select-items .selected {
+  background-color: #172755;
+  color: white;
+}
+
+.custom-select .selected:hover {
+  background-color: #172755 !important;
+  color: white;
 }
 
 body {

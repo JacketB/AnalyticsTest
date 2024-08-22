@@ -43,12 +43,18 @@
             color: white;
             transition: 0.2s;
         }
+
+        &__sing-up:focus {
+            background: $secondary-button-pressed;
+            color: white;
+            transition: 0.2s;
+        }
     }
 }
 
 #burger_menu {
-    transition: top 0.3s ease;
-  }
+  transition: top 0.3s ease;
+}
   
 #burger_menu.open {
   top: 0;

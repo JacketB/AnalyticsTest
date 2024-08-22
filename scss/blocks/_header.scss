@@ -58,6 +58,11 @@
       transition: 0.2s;
     }
 
+    &__auth .header__sign-up:focus {
+      background: $secondary-button-pressed;
+      color: white
+    }
+
     &__burger {
       @include responsive-display(block, none, 768px);
     }

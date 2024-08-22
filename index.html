@@ -33,6 +33,29 @@
   </header>
 
   <section class="burger_menu" id="burger_menu">
+    <div class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="assets/icons/Style=main.svg" alt="Analytics">
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav__menu">
+            <li class="header__nav__menu__item"><a href="#" class="header__nav__menu__link">Products</a></li>
+            <li class="header__nav__menu__item"><a href="#" class="header__nav__menu__link">Features</a></li>
+            <li class="header__nav__menu__item"><a href="#" class="header__nav__menu__link">Registration</a></li>
+            <li class="header__nav__menu__item"><a href="#" class="header__nav__menu__link">Pricing</a></li>
+          </ul>
+        </nav>
+        <div class="header__auth">
+          <button class="header__sign-up">Sign Up</button>
+        </div>
+  
+        <div class="header__burger" id="burger_open" onclick="toggleMenu()">
+          <img src="assets/icons/close.svg" alt="Burger" id="burger_button">
+        </div>
+      </div>
+    </div>
+
     <div class="burger_menu__content">
       <div class="burger_menu__content__links">
         <div class="burger_menu__content__links__link">
@@ -67,7 +90,7 @@
         <p class="hero__content__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.  
         </p>
-        <button class="hero__content__cta">Try for free</button>
+        <button class="hero__content__button">Try for free</button>
       </div>
       <div class="hero__image">
         <img src="assets/images/main-screen.svg" alt="Dashboard Preview">
@@ -171,7 +194,6 @@
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <section class="pricing">
       <div class="pricing__container">

@@ -15,19 +15,19 @@
       &:after {
         content: "\02C5";
         padding-left: 10px;
-        color: #aaa;
+        color: $text-color;
       }
 
       &.select-active {
         background-color: white;
-        border: 2px solid #172755;
+        border: 2px solid $focus;
       }
     }
   
     .select-items {
       position: absolute;
-      background-color: #fff;
-      border: 2px solid #EEEEF6;
+      background-color: white;
+      border: 2px solid $background-inputs;
       border-radius: 5px;
       top: 100%;
       left: 0;
@@ -42,7 +42,7 @@
         cursor: pointer;
   
         &:hover {
-          background-color: #f1f1f1;
+          background-color: $background-inputs;
         }
       }
     }
@@ -57,6 +57,16 @@
   
     .select-arrow-active:after {
       content: "\02C4";
+    }
+
+    .select-items .selected {
+      background-color: $focus;
+      color: white;
+    }
+
+    .selected:hover {
+      background-color: $focus !important;
+      color: white;
     }
   }
   

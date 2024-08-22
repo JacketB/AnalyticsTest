@@ -25,7 +25,7 @@
     }
 
     &__plans {
-      @include responsive-display(none, flex, 425px);
+      @include responsive-display(none, flex, 600px);
       justify-content: space-between;
       overflow-x: auto;
       margin-top: 10%;
@@ -76,6 +76,7 @@
 
   &__default {
     border: 2px solid $secondary-button-color;
+    background: $focus;
 
     &__order {
       border: 2px solid #465B95;
@@ -84,6 +85,11 @@
 
     &__order:hover {
       background: #465B95;
+    }
+
+    &__order:focus {
+      background: $secondary-button-pressed;
+      color: white;
     }
   }
 
@@ -101,6 +107,10 @@
 
     &__order:hover {
       background: $primary-button-hover;
+    }
+
+    &__order:focus {
+      background: $primary-button-pressed;
     }
   }
 }

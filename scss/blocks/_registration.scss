@@ -48,7 +48,7 @@
 
     input:focus, select:focus {
       background: white;
-      border: 2px solid #172755;
+      border: 2px solid $focus;
     }
 
     option {
@@ -67,6 +67,15 @@
       text-decoration: none;
       @include responsive-font(14px, 16px);
       transition: 0.2s;
+    }
+
+    &__submit:hover {
+      background: $primary-button-hover;
+      transition: 0.2s;
+    }
+
+    &__submit:focus {
+      background: $primary-button-pressed;
     }
   }
   
