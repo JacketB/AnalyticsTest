@@ -15,7 +15,6 @@ function toggleMenu() {
   let buttonImage = document.getElementById("burger_button");
   
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
   let isOpen = element.classList.contains("open");
 
   if (isOpen) {
@@ -29,7 +28,7 @@ function toggleMenu() {
       document.body.style.width = '';
       document.body.style.overflow = '';
 
-      document.body.style.top = `-${scrollTop}px`;
+      window.scrollTo(0, parseInt(document.body.dataset.scrollY || '0'));
     }
   } else {
     element.classList.add("open");
@@ -38,12 +37,16 @@ function toggleMenu() {
     buttonImage.src = "assets/icons/close.svg";
 
     if (window.matchMedia("(max-width: 768px)").matches) {
+      document.body.dataset.scrollY = scrollTop;
+
       document.body.style.position = 'fixed';
       document.body.style.width = '100%';
       document.body.style.overflow = 'hidden';
+      document.body.style.top = `-${scrollTop}px`;
     }
   }
 }
+
 
 
 $(document).ready(function(){
